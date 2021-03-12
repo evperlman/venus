@@ -36,13 +36,6 @@ function ChartContainer(): JSX.Element {
   } = useContext(historicalContext);
   const { serverAddress } = useContext(globalContext);
   const { serviceNames } = useContext(dynamicContext);
-  const test: any = {
-    status: 0,
-    load: 12,
-    response_time: 12,
-    error: 12,
-    availability: 12,
-  };
 
   useEffect(() => {
     axios

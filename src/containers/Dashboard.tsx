@@ -42,7 +42,6 @@ function Dashboard(): JSX.Element {
       console.log('in dashboard with dependency graph context', dependencyGraph)
     });
     return () => socket.disconnect();
-    
   }, []);
   
   if (serviceThresholds.length > 0){
@@ -177,7 +176,7 @@ function Dashboard(): JSX.Element {
         load={aggregate.load}
         availability={aggregate.availability}
       />
-
+      <Divider><Title>Current Data</Title></Divider>
       <Table
         bordered
         scroll={{y: "67vh"}}
